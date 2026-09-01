@@ -5,17 +5,17 @@ description: Create or extend full-body modern urban character illustrations in 
 
 # 低饱和都市人物插画 Skill V2｜硬朗直线版
 
-Create polished characters with one stable visual system. Use image generation for raster output. Always use the four bundled `assets/style-anchor-*.png` files as visual style references; if the user supplies another character reference, include it as the identity and pose reference in addition to the bundled anchors. Treat reference images as higher priority than generic aesthetic language.
+Create polished characters with one stable visual system. Use image generation for raster output. The written proportion, geometry, facial, palette, and negative rules below are the authoritative style specification. If the user supplies a character reference, include it as the identity, pose, clothing, and proportion reference while keeping this Skill's hard-line visual grammar.
 
-## Required reference workflow
+## Reference workflow
 
-Before generation, load and pass all four bundled style anchors to the image generator. Do not generate from text alone. The anchors define the required proportions, facial grammar, hard-edged geometry, line economy, color blocking, and flatness. When text conflicts with their appearance, follow the anchors unless the user explicitly requests a different style.
+This package intentionally contains no bundled reference images. Do not search for or substitute unrelated style references. When the user supplies an image, pass only that supplied image to the image generator and preserve its identity and pose. Without a supplied image, generate directly from the complete written specification below.
 
 ## Visual system
 
 - Use clean two-dimensional flat-vector illustration with hard-edged solid color blocks and a pure white background.
 - Keep the mood modern, light, friendly, restrained, and professional for insurance, finance, healthcare, and lifestyle-service branding.
-- Use the anchors' natural slender body with a head-to-body ratio of about 1:6.5 to 1:7. Make limbs slightly elongated. Preserve their narrow torso, straight leg construction, and restrained shoulder width.
+- Use a natural slender body with a head-to-body ratio of about 1:6.5 to 1:7. Make limbs slightly elongated. Preserve a narrow torso, straight leg construction, and restrained shoulder width.
 - Keep poses relaxed with a subtle sense of movement. Make gestures legible and anatomically plausible.
 - Simplify facial features: black dot or short-line eyes, a geometric nose, a restrained coral-pink smile, and a friendly neutral expression.
 - Use low-saturation pale peach skin. Indicate joints, palms, fingers, neck, and small anatomical details only with sparse coral-pink thin lines.
@@ -25,7 +25,7 @@ Before generation, load and pass all four bundled style anchors to the image gen
 - Reserve simple single curves for the skull, jaw, joints, and necessary hair contours. Do not use decorative S-curves, wavy contours, soft bulges, or inflated shapes.
 - Do not use heavy outlines. Use sparse, single-weight coral structure lines only where they clarify anatomy or garment construction. Keep them straight or as one controlled curve; never sketch, double-line, feather, or wobble.
 - Every color boundary must be crisp and opaque. No gradients, transparency, airbrush, glow, halo, blur, shading, highlights, depth modeling, paper texture, or antialias-like soft edge treatment.
-- Faces must remain as flat and minimal as the anchors. Do not add cheeks, blush, eyelids, pupils, realistic ears, facial shading, or extra age lines unless the brief requires a single restrained cue.
+- Faces must remain flat and minimal. Do not add cheeks, blush, eyelids, pupils, realistic ears, facial shading, or extra age lines unless the brief requires a single restrained cue.
 
 ## Shape economy
 
@@ -101,4 +101,4 @@ Avoid photorealism, 3D, painterly rendering, generic soft commercial illustratio
 
 ## Quality check
 
-Before delivery, compare the result against the four anchors and verify: full-body completeness where requested, five fingers per visible hand, correct limb count, restrained facial features, low saturation, pure white background, crisp opaque edges, straight garment and prop geometry, no lighting effects, no gradients, no realistic folds, and no soft generic-vector drift. For turnaround sheets, also verify that all three views depict the same person at the same scale with the same pose and outfit. If the result fails, make one targeted retry addressing only the failed checks.
+Before delivery, compare the result against this written specification and verify: full-body completeness where requested, five fingers per visible hand, correct limb count, restrained facial features, low saturation, pure white background, crisp opaque edges, straight garment and prop geometry, no lighting effects, no gradients, no realistic folds, and no soft generic-vector drift. For turnaround sheets, also verify that all three views depict the same person at the same scale with the same pose and outfit. If the result fails, make one targeted retry addressing only the failed checks.
