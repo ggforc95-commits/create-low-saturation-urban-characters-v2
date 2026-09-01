@@ -1,0 +1,8 @@
+interface:
+  display_name: "低饱和都市人物插画 V2｜硬朗直线版"
+  short_description: "基于固定参考图生成硬边、笔直、低饱和的扁平矢量都市人物"
+  brand_color: "#FF8A4C"
+  default_prompt: "Use $create-low-saturation-urban-characters-v2 to create a hard-line, low-saturation urban character illustration from my brief."
+
+policy:
+  allow_implicit_invocation: true
